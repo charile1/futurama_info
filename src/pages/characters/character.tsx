@@ -91,7 +91,7 @@ const Button = styled.a`
     margin: 20px;
     padding: 20px;
     border: 3px solid black;
-    background-color: red;
+    background-color: rebeccapurple;
     color: white;
     border-radius: 20px;
 `
