@@ -1,0 +1,31 @@
+{
+  "name": "futurama",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "add": "^2.0.6",
+    "axios": "^0.24.0",
+    "css": "^3.0.0",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3",
+    "swr": "^1.1.1",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.4",
+    "@types/react": "17.0.38",
+    "eslint": "8.5.0",
+    "eslint-config-next": "12.0.7",
+    "typescript": "4.5.4"
+  }
+}
