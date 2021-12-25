@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import styled from "styled-components"
+import styled from 'styled-components';
 import Image from "next/image";
 import logo from "../../public/img/logo.png"
 import styles from "../../styles/Home.module.css"
