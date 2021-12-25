@@ -3,6 +3,7 @@ import { useApi } from "../../hooks/useApi";
 import { TYPES } from "../../constants";
 import { Inventory } from "../../types/inventory";
 import {Error, Loading} from "../../components/index"
+import styled from "styled-components";
 
 const InventoryPage: NextPage = () => {
     const {data, error} = useApi(TYPES[4]);

@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import { useApi } from "../../hooks/useApi";
 import { TYPES } from "../../constants";
-import {Error, Loading} from "../../components/index"
 import { Info } from "../../types/info";
+import {Error, Loading} from "../../components/index"
 
 const InfoPage: NextPage = () => {
     const {data, error} = useApi(TYPES[3]);

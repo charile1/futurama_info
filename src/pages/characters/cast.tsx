@@ -3,6 +3,7 @@ import { useApi } from "../../hooks/useApi";
 import { TYPES } from "../../constants"
 import { Cast } from "../../types/cast";
 import { Error, Loading } from "../../components/index"
+import styled from "@emotion/styled";
 
 const CastPage: NextPage = () => {
     const {data, error} = useApi(TYPES[0]);
