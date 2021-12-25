@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import { useApi } from "../../hooks/useApi";
+import { useData } from "../../hooks/useData";
 import { TYPES } from "../../constants";
 import { Episodes } from "../../types/episodes";
 import {Error, Loading} from "../../components/index"
 import styled from "styled-components";
 
 const EpisodesPage: NextPage = () => {
-    const {data, error} = useApi(TYPES[2]);
+    const {data, error} = useData(TYPES[2]);
     if(error) return <Error />
     if(!data) return <Loading />
     return (

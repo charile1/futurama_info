@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import { useApi } from "../../hooks/useApi";
+import { useData } from "../../hooks/useData";
 import { TYPES } from "../../constants";
 import { Inventory } from "../../types/inventory";
 import {Error, Loading} from "../../components/index"
 import styled from "styled-components";
 
 const InventoryPage: NextPage = () => {
-    const {data, error} = useApi(TYPES[4]);
+    const {data, error} = useData(TYPES[4]);
     if(error) return <Error />
     if(!data) return <Loading />
     return (

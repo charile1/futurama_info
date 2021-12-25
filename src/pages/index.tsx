@@ -14,32 +14,32 @@ const MainPage: NextPage = () => {
             <h1>FUTURAMA CHARACTERS</h1>
             <div>
             <a href={root+"/cast"}>
-                <p>캐스트</p>
+                <p>CAST</p>
             </a>
             </div>
             <div>
             <a href={root+"/character"}>
-                <p>캐릭터</p>
+                <p>CHARACTER</p>
             </a>
             </div>
             <div>
             <a href={root+"/episodes"}>
-                <p>에피소드</p>
+                <p>EPISODE</p>
             </a>
             </div>
             <div>
             <a href={root+"/info"}>
-                <p>인포</p>
+                <p>INFO</p>
             </a>
             </div>
             <div>
             <a href={root+"/inventory"}>
-                <p>인벤토리</p>
+                <p>INVENTORY</p>
             </a>
             </div>
             <div>
             <a href={root+"/questions"}>
-                <p>질문</p>
+                <p>QUIZ</p>
             </a>
             </div>
         </div>

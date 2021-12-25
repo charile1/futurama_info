@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import styled from 'styled-components';
-import { useApi } from "../../hooks/useApi";
+import { useData } from "../../hooks/useData";
 import { TYPES } from "../../constants";
 import  {Question} from "../../types/question";
 import {Error, Loading} from "../../components/index"; 
 
 const QuestionPage: NextPage = () => {
-    const {data, error} = useApi(TYPES[5]);
+    const {data, error} = useData(TYPES[5]);
     if(error) return <Error />
     if(!data) return <Loading />
     return (

@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import { useApi } from "../../hooks/useApi";
+import { useData } from "../../hooks/useData";
 import { TYPES } from "../../constants"
 import { Cast } from "../../types/cast";
 import { Error, Loading } from "../../components/index"
 import styled from "@emotion/styled";
 
 const CastPage: NextPage = () => {
-    const {data, error} = useApi(TYPES[0]);
+    const {data, error} = useData(TYPES[0]);
     if(error) return <Error />
     if(!data) return <Loading />
     return (
