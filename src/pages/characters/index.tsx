@@ -7,45 +7,62 @@ import styles from "../../styles/Home.module.css"
 const MainPage: NextPage = () => {
     const root = 'characters';
     return (
-        <div>
+        <Container>
             <div className="image-wrap">
                 <Image src={logo} />
             </div>
             <h1>FUTURAMA CHARACTERS</h1>
             <div>
             <a href={root+"/cast"}>
-                <p>캐스트</p>
+                <p>CAST</p>
             </a>
             </div>
             <div>
             <a href={root+"/character"}>
-                <p>캐릭터</p>
+                <p>CHARACTER</p>
             </a>
             </div>
             <div>
             <a href={root+"/episodes"}>
-                <p>에피소드</p>
+                <p>EPISODE</p>
             </a>
             </div>
             <div>
             <a href={root+"/info"}>
-                <p>인포</p>
+                <p>INFO</p>
             </a>
             </div>
             <div>
             <a href={root+"/inventory"}>
-                <p>인벤토리</p>
+                <p>INVENTORY</p>
             </a>
             </div>
             <div>
             <a href={root+"/questions"}>
-                <p>질문</p>
+                <p>QUIZ</p>
             </a>
             </div>
-        </div>
+        </Container>
 
         
     )
 }
 
 export default MainPage;
+
+const Container = styled.div`
+    background-color: wheat;
+    border: 1px solid red;
+    text-align: center;
+    img{
+    display: block;
+    /* width: 10px; */
+    /* max-width:100%; */
+  }
+  a {
+      color: rebeccapurple;
+      /* border: 2px solid black; */
+      font-size: 30px;
+      font-weight: 600;
+  }
+`

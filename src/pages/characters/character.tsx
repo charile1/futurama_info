@@ -14,7 +14,7 @@ const CharacterPage: NextPage = () => {
 
     return (
         <Main>
-            <Button href="./">back</Button>
+            <Button href="/">back</Button>
             <Container>
                 {data.map((characterData: Characters) => {
                     const {id, images, name} = characterData;

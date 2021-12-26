@@ -7,7 +7,7 @@ import styles from "../../styles/Home.module.css"
 const MainPage: NextPage = () => {
     const root = 'characters';
     return (
-        <div>
+        <Container>
             <div className="image-wrap">
                 <Image src={logo} />
             </div>
@@ -42,10 +42,27 @@ const MainPage: NextPage = () => {
                 <p>QUIZ</p>
             </a>
             </div>
-        </div>
+        </Container>
 
         
     )
 }
 
 export default MainPage;
+
+const Container = styled.div`
+    background-color: wheat;
+    border: 1px solid red;
+    text-align: center;
+    img{
+    display: block;
+    /* width: 10px; */
+    /* max-width:100%; */
+  }
+  a {
+      color: rebeccapurple;
+      /* border: 2px solid black; */
+      font-size: 30px;
+      font-weight: 600;
+  }
+`
