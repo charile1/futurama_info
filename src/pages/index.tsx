@@ -5,64 +5,67 @@ import logo from "../../public/img/logo.png"
 import styles from "../../styles/Home.module.css"
 
 const MainPage: NextPage = () => {
-    const root = 'characters';
+    // const root = 'characters';
     return (
         <Container>
             <div className="image-wrap">
                 <Image src={logo} />
             </div>
-            <h1>FUTURAMA CHARACTERS</h1>
-            <div>
-            <a href={root+"/cast"}>
-                <p>CAST</p>
-            </a>
-            </div>
-            <div>
-            <a href={root+"/character"}>
-                <p>CHARACTER</p>
-            </a>
-            </div>
-            <div>
-            <a href={root+"/episodes"}>
-                <p>EPISODE</p>
-            </a>
-            </div>
-            <div>
-            <a href={root+"/info"}>
+            {/* <h1>FUTURAMA CHARACTERS</h1> */}
+            <li>
+            <a href={"/info"}>
                 <p>INFO</p>
             </a>
-            </div>
-            <div>
-            <a href={root+"/inventory"}>
-                <p>INVENTORY</p>
+            </li>
+            <li>
+            <a href={"../characters"}>
+                <p>CHARACTER</p>
             </a>
-            </div>
-            <div>
-            <a href={root+"/questions"}>
+            </li>
+            <li>
+            <a href={"/cast"}>
+                <p>CAST</p>
+            </a>
+            </li>
+            <li>
+            <a href={"/episodes"}>
+                <p>EPISODE</p>
+            </a>
+            </li>
+            <li>
+            <a href={"/questions"}>
                 <p>QUIZ</p>
             </a>
-            </div>
-        </Container>
-
-        
+            </li>
+            <li>
+            <a href={"/inventory"}>
+                <p>INVENTORY</p>
+            </a>
+            </li>
+        </Container>        
     )
 }
 
 export default MainPage;
 
 const Container = styled.div`
-    background-color: wheat;
-    border: 1px solid red;
+    margin-top: 80px;
+    background-color: yellowgreen;
+    border: 1px solid black;
     text-align: center;
     img{
-    display: block;
+    /* display: block; */
     /* width: 10px; */
     /* max-width:100%; */
   }
   a {
       color: rebeccapurple;
-      /* border: 2px solid black; */
       font-size: 30px;
-      font-weight: 600;
+      font-weight: 700;
+  }
+  li {
+      list-style: none;
+      margin: 30px;
   }
 `
+    
