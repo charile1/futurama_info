@@ -1,5 +1,5 @@
 export const Error = () => {
     return (
-      <div>Loading..🔄</div>
+      <div>There is an error. What could it be? 🤯</div>
     )
   }
