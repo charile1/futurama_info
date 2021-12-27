@@ -4,6 +4,8 @@ import styled from '@emotion/styled';
 import { MEDIA_QUERY_END_POINT } from "../constants";
 import { Info } from '../types/info';
 import Link from 'next/link';
+import Image from "next/image";
+import philip from "../../public/img/philip.png"
 
 export const InfoContainer = () => {
   const name = 'info'
@@ -13,63 +15,65 @@ export const InfoContainer = () => {
   if (!data) return <Loading />
 
   return (
-    <main>
-      <h2>{name}</h2>
+    <Container>
       <Ul>
         {data.map((infoData: Info) => {
           const { synopsis, yearsAired, creators, id } = infoData;
           return (
-            <li key={`futurama-info-${id}`}>
-              <dl>
-                <div>
-                  <dt>synopsis</dt>
-                  <dd>{synopsis}</dd>
-                </div>
-                <div>
-                  <dt>yearsAired</dt>
-                  <dd>{yearsAired}</dd>
-                </div>
-                <div>
-                  <dt>creators</dt>
-                  <dd>
-                    <Link href={creators[0].url}>
-                      <a>{creators[0].name}</a>
-                    </Link>
-                  </dd>
-                  <dd>
-                    <Link href={creators[0].url}>
-                      <a>{creators[0].name}</a>
-                    </Link></dd>
-                </div>
-
-              </dl>
+            <li key={`info${id}`}>
+              <Image src={philip} width={400} height={400} />
+                <dl>
+                  <div>
+                    <dd>{synopsis}</dd>
+                  </div>
+                  <div>
+                    <dt><span>YEARSAIRED</span></dt>
+                    <dd>{yearsAired}</dd>
+                  </div>
+                  <div>
+                    <dt><span>CREATORS</span></dt>
+                    <dd>
+                      <Link href={creators[0].url}> 
+                        <a>{creators[0].name}</a>
+                      </Link>
+                      </dd>
+                  </div>
+                </dl>
             </li>
           )
         })}
       </Ul>
-    </main>
+    </Container>
   )
 }
 
+const Container = styled.div`
+background-color: yellowgreen;
+border: 1px solid;
+text-align: center;
+padding-top: 30px;
+`
 
 const Ul = styled.ul`
+background-color: yellowgreen;
   li{
-    max-width:1000px; margin:100px auto;
+    max-width:1000px; 
+    margin:80px auto ;
     dl{
-        div{flex-direction:column;}
-        div:not(:first-child){
-          flex-direction: row;
+        padding-top: 20px;
+        span {
+          font-weight: 600;
+        }
+        div {
+          padding-bottom: 1rem;
         }
         div:first-child{
-          margin-bottom:2rem;
+          margin-bottom: 2rem;
           dd{
             columns: 20em;
-            column-gap:4rem;
+            column-gap:5rem;
             text-align:justify;
-            letter-spacing:-0.3px;
-            &::first-letter{
-              font-size:2em; font-weight:bold;
-            }
+            letter-spacing: -0.3px;
           }
         }
       }
