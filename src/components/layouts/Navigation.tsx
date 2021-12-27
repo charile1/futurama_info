@@ -33,13 +33,13 @@ export const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link href="questions">
-                <a>Questions</a>
+              <Link href="inventory">
+                <a>Inventory</a>
               </Link>
             </li>
             <li>
-              <Link href="inventory">
-                <a>Inventory</a>
+              <Link href="questions">
+                <a>Questions</a>
               </Link>
             </li>
           </ul>
