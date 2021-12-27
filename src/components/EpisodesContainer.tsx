@@ -39,12 +39,21 @@ const Container = styled.div`
 margin: 80px auto;
 padding-top: 2rem;
 padding: 100px;
-background-color: tomato;
+background-color: red;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 align-items: center;
 justify-content: center;
 text-align: center;
+@media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: ${MEDIA_QUERY_END_POINT.TABLET}) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: ${MEDIA_QUERY_END_POINT.DESKTOP}) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
 `
 
