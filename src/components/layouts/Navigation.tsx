@@ -62,9 +62,10 @@ const Header = styled.header`
   div{
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
-    max-width:1280px; margin:0 auto;
+    max-width:1280px; 
+    margin:0 auto;
     padding: 0.8em 0;
   }
   
@@ -95,9 +96,9 @@ const Header = styled.header`
         flex-direction:row;
         ul{
           grid-template-columns: repeat(6,1fr);
-          /* gap:0; */
           margin:0 0 0 0;
         }
       }
     }
+
 `

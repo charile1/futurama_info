@@ -4,10 +4,7 @@ import styled from "@emotion/styled";
 import Link from 'next/link';
 import { MEDIA_QUERY_END_POINT, TYPES } from "../constants";
 import { Cast } from '../types/cast';
-import  he  from "../../public/img/he.png";
 import { castImage } from "../../src/constants";
-import Image from "next/image";
-// import Head from 'next/head'
 
 export const CastContainer = () => {
     const name = 'cast'
@@ -23,9 +20,11 @@ export const CastContainer = () => {
                     return (
                         <Card key={castData.id}>
                             <CastImg src={castImage[id - 1].url} alt="캐스트 인물" />
-                            <h4>{castData.name}</h4>
-                            <p><span>Birth</span>: {castData.born}</p>
-                            <Link href={bio.url}><a>More</a></Link>
+                            <Exp>
+                                <h4>{castData.name}</h4>
+                                <p><span>Birth</span>: {castData.born}</p>
+                                <Link href={bio.url}><a>More</a></Link>
+                            </Exp>
                         </Card>
                     );
                 })}
@@ -34,7 +33,7 @@ export const CastContainer = () => {
 }
 
 const CastImg = styled.img`
-  height: 70%;
+  height: 65%;
   border-radius: 10px;`
 
 const Container = styled.div`
@@ -46,10 +45,16 @@ const Container = styled.div`
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, 2fr);
-    background-color: yellowgreen;
+    background-color: red;
+    @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
+        grid-template-columns: 1fr;
+    }
     @media (min-width: ${MEDIA_QUERY_END_POINT.TABLET}) {
-    grid-template-columns: repeat(3, calc((100% - 2rem * 2) / 3));
-  }
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: ${MEDIA_QUERY_END_POINT.DESKTOP}) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     h4 {
         font-size: 1.3rem;
         font-weight: 600;
@@ -62,12 +67,12 @@ const Container = styled.div`
 
 const Card = styled.div`
     padding: 20px 0 0;
-    border: 3px solid black;
+    border: 5px solid black;
     border-radius: 30px;
     width: 250px;
-    height: 400px;
+    height: 450px;
     margin: 0 auto;
-    background-color: green;
+    background-color: yellowgreen;
     overflow: hidden;
     text-align: center;
     line-height: 1.8;
@@ -78,6 +83,14 @@ const Card = styled.div`
         border-bottom: 1px solid;
 
     }
+`
 
-
+const Exp = styled.div`
+    border: 4px dashed black;
+    background-color: tomato;
+    border-radius: 30px;
+    width: 90%;
+    display: block;
+    padding-bottom: 10px;
+    margin: 1rem auto;
 `

@@ -5,6 +5,7 @@ import { MEDIA_QUERY_END_POINT } from "../constants";
 import { useState } from 'react';
 import { Question } from '../types/question';
 
+
 export const QuestionsContainer = () => {
   const name = 'questions';
   const { data, error } = useData(name);
@@ -14,7 +15,7 @@ export const QuestionsContainer = () => {
   if (!data) return <Loading />
 
   return (
-    <main>
+    <Container>
       <div>
         {data.map((questionsData: Question) => {
           const { question, possibleAnswers, correctAnswer, id } = questionsData;
@@ -28,26 +29,59 @@ export const QuestionsContainer = () => {
                 {possibleAnswers.map((questionList: string, index: number) => {
                   return (
                     <>
-                      <li>
-                        <input type="radio" name={question} id={questionList} />
-                        <label htmlFor={questionList}><span>{index + 1}</span> {questionList}</label>
-                      </li>
+                      <div>
+                        <input 
+                        type="radio"
+                        name={question} 
+                        id={questionList} />
+                        <label htmlFor={questionList}> {questionList}</label>
+                      </div>
                     </>
                   )
                 })
                 }
               </div>
-              <p className="answer">
+              <p> Answer is  <span className='ans'>{correctAnswer}</span></p>
+              {/* <p className="ans">
                 <span>{correctAnswer}</span>
-              </p>
+              </p> */}
             </li>
           )
         })}
       </div >
-    </main >
+    </Container >
   )
 }
 
-
+const Container = styled.div`
+margin: 80px auto 0;
+padding: 2rem;
+align-items: center;
+background-color: red;
+li {
+  background: yellowgreen;
+  list-style: none;
+  border: 5px solid ;
+  width: 600px;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 0 auto 10px;
+  line-height: 2em;
+}
+  span{
+    font-size: 1.2rem;
+    background-color: yellow;
+    border-radius: 10px;
+  }
+  .ans {
+    color: yellow;
+    padding: 5px;
+    :hover {
+      cursor: pointer;
+      color: black;
+      opacity: 1;
+    }
+  }
+`
 
 

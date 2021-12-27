@@ -1,7 +1,6 @@
 import { Error, Loading } from '.';
 import { useData } from '../hooks/useData';
 import styled from '@emotion/styled';
-import Link from 'next/link';
 import { MEDIA_QUERY_END_POINT, TYPES } from "../constants";
 import { Characters } from '../types/characters';
 
@@ -56,6 +55,15 @@ const Container = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   background-color: red;
+  @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
+    grid-template-columns: 1fr ;
+  }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.TABLET}) {
+    grid-template-columns: 1fr 1fr ;
+  }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.DESKTOP}) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `
 
 const Card = styled.div`
