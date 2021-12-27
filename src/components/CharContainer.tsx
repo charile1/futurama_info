@@ -23,15 +23,18 @@ export const CharContainer = () => {
                         <Card key={characterData.id}>
                             <Profile src={images.main} alt="" />
                                  <Exp>
-                                        <p>NAME: {characterData.name.first} {characterData.name.middle} {characterData.name.last}</p>
-                                        <p>GENDER: {characterData.gender}</p>
-                                        <p>SPECIES: {characterData.species}</p>
-                                        <p>HOME_Planet: {characterData.homePlanet}</p>
-                                        {/* <p>OCCUPATION: {characterData.occupation}</p> */}
-                                        <p>AGE: {characterData.age}</p>
-                                        {/* <p>sayings: {characterData.sayings.map((e) => {
-                                            return <li key={e}>{e}</li>})}
-                                        </p> */}
+                                        <p><span>NAME:</span> {characterData.name.first} {characterData.name.middle} {characterData.name.last}</p>
+                                        <p><span>GENDER :</span> {characterData.gender}</p>
+                                        <p><span>SPECIES</span>: {characterData.species}</p>
+                                        <p><span>HOME_Planet</span>: {characterData.homePlanet}</p>
+                                        <p><span>OCCUPATION</span>: {characterData.occupation}</p>
+                                        <p><span>AGE</span>: {characterData.age}</p>
+                                        {/* <select>
+                                       <option>
+                                            sayings: {characterData.sayings.map((e) => {
+                                              return <li key={e}>{e}</li>})}
+                                       </option>
+                                        </select> */}
                                  </Exp>
                         </Card>
                     )
@@ -64,6 +67,9 @@ const Card = styled.div`
   background-color: yellowgreen;
   border-radius: 100px;
   overflow: hidden;
+  span {
+    font-weight: 600;
+  }
 `
 
 const Exp = styled.div`
@@ -74,6 +80,7 @@ const Exp = styled.div`
   width: 300px;
   background-color: tomato;
   text-align: center;
+  line-height: 1.5rem;
 `
 
 const p = styled.p`
