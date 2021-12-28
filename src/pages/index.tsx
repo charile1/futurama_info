@@ -8,38 +8,38 @@ const MainPage: NextPage = () => {
     // const root = 'characters';
     return (
         <Container>
-            <div className="image-wrap">
-                <Image src={logo} />
+            <div className="image">
+                <Image src={logo} width={700} height={400}/>
             </div>
             {/* <h1>FUTURAMA CHARACTERS</h1> */}
             <li>
             <a href={"/info"}>
-                <p>INFO</p>
+                <p>Info</p>
             </a>
             </li>
             <li>
             <a href={"../characters"}>
-                <p>CHARACTER</p>
+                <p>Characters</p>
             </a>
             </li>
             <li>
             <a href={"/cast"}>
-                <p>CAST</p>
+                <p>Cast</p>
             </a>
             </li>
             <li>
             <a href={"/episodes"}>
-                <p>EPISODE</p>
-            </a>
-            </li>
-            <li>
-            <a href={"/questions"}>
-                <p>QUIZ</p>
+                <p>Episodes</p>
             </a>
             </li>
             <li>
             <a href={"/inventory"}>
-                <p>INVENTORY</p>
+                <p>Inventory</p>
+            </a>
+            </li>
+            <li>
+            <a href={"/questions"}>
+                <p>Questions</p>
             </a>
             </li>
         </Container>        
@@ -53,19 +53,21 @@ const Container = styled.div`
     background-color: yellowgreen;
     border: 1px solid black;
     text-align: center;
-    img{
-    /* display: block; */
-    /* width: 10px; */
-    /* max-width:100%; */
+    Image{
+    padding-top: 2rem;
   }
   a {
-      color: rebeccapurple;
+      color: green;
       font-size: 30px;
-      font-weight: 700;
+      font-weight: 800;
   }
   li {
       list-style: none;
       margin: 30px;
   }
+  .image {
+      padding-top: 2rem;
+  }
 `
     
+
