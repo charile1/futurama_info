@@ -5,7 +5,8 @@ export const Bottom = () => {
 
     <Footer>
       <div>
-        <a href="https://sampleapis.com/api-list/futurama"> Futurama API adress</a>
+        <p>Copyright © charile</p>
+        <a href="https://sampleapis.com/api-list/futurama"> Click the Futurama API adress.</a>
       </div>
     </Footer>
 
@@ -18,5 +19,6 @@ const Footer = styled.footer`
     color: yellowgreen;
     padding: 1em 0;
     text-align:center;
+    line-height: 1.2;
   }
 `
