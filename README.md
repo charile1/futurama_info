@@ -32,3 +32,50 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+1. 목표와 기능
+1.1 목표
+
+1.2 기능
+
+2. 개발 환경 및 배포 URL
+2.1 개발 환경
+
+
+2.2 배포 URL
+www.취준성공.com
+
+3. 프로젝트 구조와 개발 일정
+3.1 프로젝트 구조
+  └─ aaa
+      │  bbb
+      │  bbb
+      │  
+      ├─bbb
+      │  │  bbb.py
+      │  │  bbb.py
+...중략...
+
+3.1 개발 일정(WBS)
+
+
+
+
+4. 역할 분담
+
+
+5. UI / BM
+
+
+
+6. 데이터베이스 모델링(ERD)
+
+
+7. 메인 기능
+
+
+8. 추가 기능
+
+
+9. 개발하며 느낀점
+
