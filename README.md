@@ -34,9 +34,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
-# 지역기반 스터디 그룹 커뮤니티 서비스
-- 해당 repo는 sample repo입니다. 실제 사용되고 있는 repo가 아닙니다.
-- 이미지는 약간의 블러처리를 하였습니다.
+# 서비스 제목
+- 간단한 프로젝트 소개
 
 
 ## 1. 목표와 기능
