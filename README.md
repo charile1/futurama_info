@@ -33,20 +33,27 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-1. 목표와 기능
-1.1 목표
 
-1.2 기능
-
-2. 개발 환경 및 배포 URL
-2.1 개발 환경
+# 지역기반 스터디 그룹 커뮤니티 서비스
+- 해당 repo는 sample repo입니다. 실제 사용되고 있는 repo가 아닙니다.
+- 이미지는 약간의 블러처리를 하였습니다.
 
 
-2.2 배포 URL
-www.취준성공.com
+## 1. 목표와 기능
 
-3. 프로젝트 구조와 개발 일정
-3.1 프로젝트 구조
+### 1.1 목표
+
+### 1.2 기능
+
+## 2. 개발 환경 및 배포 URL
+### 2.1 개발 환경
+
+### 2.2 배포 URL
+- www.취준성공.com
+
+## 3. 프로젝트 구조와 개발 일정
+### 3.1 프로젝트 구조
+```bash
   └─ aaa
       │  bbb
       │  bbb
@@ -55,27 +62,23 @@ www.취준성공.com
       │  │  bbb.py
       │  │  bbb.py
 ...중략...
-
-3.1 개발 일정(WBS)
-
-
+```
+### 3.1 개발 일정(WBS)
 
 
-4. 역할 분담
+## 4. 역할 분담
 
 
-5. UI / BM
+## 5. UI / BM
 
 
-
-6. 데이터베이스 모델링(ERD)
-
-
-7. 메인 기능
+## 6. 데이터베이스 모델링(ERD)
 
 
-8. 추가 기능
+## 7. 메인 기능
 
 
-9. 개발하며 느낀점
+## 8. 추가 기능
 
+
+## 9. 개발하며 느낀점
